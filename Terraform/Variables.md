@@ -1,0 +1,55 @@
+Subject: [[Terraform]] 
+Type: [[Formação DevOps Professional]]  #terraform #linuxtips
+
+---
+- Variables são declaradas
+	- variable block
+- Normalmente cria um novo arquivo
+	- variables.tf
+- Formas de utilizar as variáveis
+	- Na CLI 
+		- terraform -var="nome da variavel = variavel"
+		- Quase nunca utilizado
+	- Dentro do código
+		- var.**nome da variavel**
+	- .tfvars
+		- Para uma quantidade grande de variáveis pode ser interessante utilizar o .tfvars para especificar os valores e definições de cada variável
+		- Automáticamente ele pega as variáveis de arquivos com nome:
+			- terraform.tfvars
+			- \*.auto.tfvars
+	- Variáveis de ambiente do próprio terminal
+- Arguments
+	- Quando for passar variáveis mais complexas utilize aspas simples '  ', para que o Terraform não entenda o conteúdo da variável como string
+	- default
+		- Se não tiver valor padrão, terraform pergunta ao usuário
+	- type
+		- string
+			- Terraform vai tentar converter tudo em string se o tipo da variável for string
+		- number
+		- bool
+		- list
+		- set
+		- map
+		- object
+		- tuple
+		- any
+			- Vai aceitar qualquer tipo
+	- description
+		- Descrição da função da variavel, para que ela serve
+		- Utilize sempre que possível
+	- validation
+		- Cria uma condição para validar o valor dado na variável
+		- Pode passar uma mensagem de erro
+	- ephemeral
+	- sensitive
+		- Não vai mostrar o valor na saída em texto plano
+		- Caso o provider responder o valor **sensitive**, este vai ser mostrado 
+		- Utilizar prefixos, pode ser mostrado quando estiver sendo criado
+	- nullable
+
+- Precedência
+	- Variáveis de ambiente
+	- terraform.tfvars
+	- terraform.tfvars.json
+	- \*.auto.tfvars - \*.auto.tfvars.json
+	- **-var** - **-var-file** -> **Mais relevante**
