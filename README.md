@@ -9,7 +9,7 @@ Also, it's a way to back up my vault :D
 
 ---
 ## Oi,
-Esse é o meu Cofre do Obsidian que eu uso para tomar notas das coisas que estou estudando no momento. Gosto de estudar diferentes matérias em paralelo — acho legal e isso me ajuda a perceber **conexões** entre os assuntos.
+Esse é o meu **Cofre do Obsidian** que eu uso para tomar notas das coisas que estou estudando no momento. Gosto de estudar diferentes matérias em paralelo — acho legal e isso me ajuda a perceber **conexões** entre os assuntos.
 
 As notas que faço provavelmente só fazem sentido para mim (o que é o mais importante — afinal, são _**minhas notas**_). Mas resolvi deixar este repositório público, vai que ajuda alguém, ou alguém quer ver um cofre para se inspirar ou sei lá.
 
