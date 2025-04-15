@@ -1,0 +1,7 @@
+- [x] Motherboard
+- [x] Processor
+- [x] Memory
+- [x] Power Supply
+- [ ] Storage
+- [ ] Case
+- [ ] Cooling

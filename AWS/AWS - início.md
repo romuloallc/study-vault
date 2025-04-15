@@ -12,6 +12,7 @@ Type: [[Formação DevOps Professional]]  #aws  #linuxtips
 		- Trial
 - Usuário root
 	- Ativar MFA
+	- Muito poderoso para ser usado
 - Usuário admin
 	- Access Key - scripts, cli
 	- AWS Management Console Access - Acesso na console

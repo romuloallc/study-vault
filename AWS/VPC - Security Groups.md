@@ -1,0 +1,32 @@
+Subject: [[AWS]] 
+Type: [[Formação DevOps Professional]]  #aws  #linuxtips 
+
+---
+- VPC default -  criada junto com a conta
+- Zonas de disponibilidade
+- Subnets 
+	- Privadas
+		- Sem acesso a internet por padrão
+			- Rota para um NAT Gateway
+	- Públicas
+			- Rota para Internet Gateway
+- NAT Gateways
+	- 1 por AZ
+	- 2 por AZ
+	- none
+- VPC - Security Group
+	- Específico pra cada VPC
+	- Regras de entrada
+	- Regras de saída
+	- Mecanismo Statefull
+		- Não é necessário declarar a entrada e a saída
+		- Se é permitido na entrada, logo é permitido na saída
+	- Pode ser usado em uma VM
+	- Regras que vão ser permitidas - o resto é negado por padrão
+- Network ACL
+	- Lista de acesso para VPC
+	- Regras de entrada de tráfego 
+	- Proteção da rede - Aplica a todas as instâncias da rede
+	- Negar ou permitir o tráfego
+	- Mecanismo Stateless
+		- Criar entrada e saída
