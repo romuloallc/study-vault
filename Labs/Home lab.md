@@ -3,5 +3,5 @@
 - [x] Memory
 - [x] Power Supply
 - [ ] Storage
-- [ ] Case
-- [ ] Cooling
+- [x] Case
+- [x] Cooling
