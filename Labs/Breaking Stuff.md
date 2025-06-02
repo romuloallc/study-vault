@@ -1,3 +1,12 @@
+---
+id: Breaking Stuff
+aliases: []
+tags: []
+---
+
+Gcloud commands to setup a quick environment with a VPC, Subnet, Firewall Rules (Custom and IAP Rule) and a Compute Engine Instance
+
+
 ###### Creating VPC
 ```[bash]
 gcloud compute networks create vpc-lab --project=labs-456119 --subnet-mode=custom --mtu=1460 --bgp-routing-mode=regional --bgp-best-path-selection-mode=legacy
@@ -14,7 +23,7 @@ gcloud compute firewall-rules create vpc-lab-allow-custom --project=labs-456119 
 ```[bash]
 gcloud compute --project=labs-456119 firewall-rules create allow-iap --direction=INGRESS --priority=1000 --network=vpc-lab --action=ALLOW --rules=tcp:22 --source-ranges=35.235.240.0/20
 ```
-##### Creating IAP Rule
+##### Creating VM Instance
 ```[bash]
 gcloud compute instances create instance-lab \
 

@@ -1,3 +1,9 @@
+---
+id: Terraform - Notes
+aliases: []
+tags: []
+---
+
 Type: [[Terraform]] #terraform  
 
 Notes and commands about my Terraform study
@@ -7,8 +13,8 @@ Notes and commands about my Terraform study
 - Variables can be assigned values in multiples ways:
 	- Environment Variables
 		- ```export TF_VAR_variablename="variablevalue"```
-	- Command Line Flags [[#^e613f6]]
-	- From a File [[#^402a90]]
+	- Command Line Flags 
+	- From a File 
 		- terraform.tfvars - default name for the file 
 	- Variable Defaults
 		- variables.tf - File for default values
@@ -45,14 +51,12 @@ terraform plan
 terraform plan -var="instancetype=t2.small"
 ```
 
-^e613f6
 
 	
 ```bash
 terraform plan -var-file="custom.tfvars"
 ```
 
-^402a90
 
 
 

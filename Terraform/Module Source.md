@@ -1,0 +1,41 @@
+Subject: [[Terraform]] 
+Type: [[Formação DevOps Professional]]  #terraform #linuxtips
+
+---
+- Module Sources
+	- Local Paths
+	- Terraform Registry
+	- **GitHub**
+	- Bitbucket
+	- Generic Git Repository
+	- Generic Mercurial Repository
+	- HTTP URLs
+	- S3 Bucket
+	- GCS Bucket
+	- Modules in Package Sub-directories
+---
+- Estrutura de pastas:
+	- Módulo Instâncias
+		- Main
+		- v1.0.0
+		- v1.1.0
+	- Projeto 
+		- Código da aplicação
+		- IAC
+			- Terraform
+				- Dev
+					- main.tf
+					- provider.tf
+				- QA
+					- main.tf
+					- provider.tf
+				- Prod
+					- main.tf
+					- provider.tf
+
+- Os arquivos ```main.tf``` irão chamar o módulo específicado
+- Não utilize diretamente a versão do módulo da main - utilize uma versão stable
+	- Utilize o ref que vai ser utilizada
+	- [Semantic Versioning](semver.org)
+- Módulo é um produto que entregável que as outras pessoas irão utilizar 
+- Mono repo - Sub-directories
