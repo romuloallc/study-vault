@@ -1,9 +1,5 @@
----
-id: Home lab
-aliases: []
-tags: []
----
 
+Subject: [[Projects]] #projects 
 - [x]    Motherboard
 - [x]    Processor
 - [x]    Memory

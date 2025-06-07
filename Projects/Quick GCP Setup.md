@@ -1,9 +1,5 @@
----
-id: Breaking Stuff
-aliases: []
-tags: []
----
 
+Subjects: [[Google Cloud Platform]] [[Projects]] #gcp #projects 
 Gcloud commands to setup a quick environment with a VPC, Subnet, Firewall Rules (Custom and IAP Rule) and a Compute Engine Instance
 
 
