@@ -23,33 +23,48 @@ Type: [[Formação DevOps Professional]]  #kubernetes #linuxtips
 ### Componentes
 -  Control Plane
     -  `etcd`
-        -  Portas:
-            -  TCP 2378
-            -  TCP 2380
         -  Guarda o estado do cluster
+        -  Datastore chave-valor
+            -  Kubernetes utiliza para armazenar as especificações, status e configurações do cluster
+        -  Dados armazenados no `etcd` são manipulados apenas atráveis da API
+        -  Apenas executado em nodes com role Control Plane
+            -  É possível executar em clusters externos, específicos para esse propósito
+        -  Portas:
+            -  TCP 2379
+            -  TCP 2380
     -  Kube API Server
+        -  "Cérebro" do cluster
+        -  Toda a comunicação do cluster acontece através do Kube API Server
+        -  JSON sobre HTTP
+        -  Comunicação entre componenetes são estabelecidas através de requisições REST
         -  Portas:
             -  TCP 6443
-        -  "Cérebro" do cluster
-        -  Toda a comunicação do cluster acontece através doKube API Server
     -  Kube Scheduler
+        -  Responsável por saber em qual node o pod/container será hospedado
+        -  Gerenciamento dos containers/pods
+        -  Seleção dos nodes se baseia na quantidade de recurso dos nodes e também estados dos nodes
+            -  Para garantir uma boa distribuição 
+        -  Também é possível definir políticas, afinidade e etc...
         -  Portas:
             -  TCP 10251
-        -  Responsável por saber onde os containers vão ser criados
-        -  Gerenciamento dos containers/pods
     -  Kube Controller Manager
+        -  Tem vários controllers
+        -  Garante que o cluster está no estado definido pelo `etcd`
+        -  Gerenciador dos controllers
         -  Portas:
             -  TCP 10252
-        -  Tem vários controllers
-        -  Garante que o cluster está no estado desejado
-        -  Gerenciador dos controllers
 -  Workers
     -  Kubelet
+        -  Agente do Kubernetes dentro do nó
+            -  Gerencia os pods dentro do workers
+                -  Inicia, para e mantém os containers e os pods em funcionamento desejado pelo controller
+        -  Passa as informações do nó para o Kube API Server
         -  Portas:
             -  TCP 10250
-        -  Agente do Kubernetes dentro do nó
-        -  Passa as informações do nó para o Kube API Server
     -  Kube Proxy
+        -  Atua como Proxy e Load Balancer
+        -  Efetua roteamento de requisições para os pods corretos
+        -  Gerencia a parte de rede do nó
         -  Faz a comunicação dos pods com o resto do mundo
     -  NodePort
         -  Tipo de serviço
