@@ -1,6 +1,8 @@
 ---
-
+id: AWS
+aliases: []
+tags:
+  - #aws
 ---
-___
 Map of Content
-#aws
+

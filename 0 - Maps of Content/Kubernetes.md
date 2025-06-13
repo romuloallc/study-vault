@@ -1,8 +1,8 @@
 ---
 id: Kubernetes
 aliases: []
-tags: []
----
+tags:
+  - #kubernetes
 ---
 Map of Content
-#kubernetes
+

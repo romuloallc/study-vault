@@ -1,6 +1,8 @@
 ---
-
+id: Google Cloud Platform
+aliases: []
+tags:
+  - #gcp
 ---
-___
 Map of Content
-#gcp
+

@@ -1,8 +1,8 @@
 ---
 id: Projects
 aliases: []
-tags: []
----
+tags:
+  - #projects
 ---
 Map of Content
-#projects
+

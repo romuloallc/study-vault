@@ -2,6 +2,6 @@
 id: Nomad
 aliases: []
 tags:
-  - #kubernetes
+  - #nomad
 ---
 Map of Content
