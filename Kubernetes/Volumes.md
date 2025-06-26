@@ -3,10 +3,9 @@ id: Volumes
 aliases: []
 tags: []
 ---
+Subject: [[Kubernetes]]
+Type: [[Formação DevOps Professional]]  #kubernetes #linuxtipis
 
-Subject:
-  - - Kubernetes
-Type: "[[Formação DevOps Professional]]  #kubernetes #linuxtips"
 ---
 # Volumes em Pods
 -  Tipo:
